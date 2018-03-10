@@ -1,0 +1,62 @@
+doctype html
+html.no-js(lang='en', dir='ltr')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Foundation Sandbox
+    link(rel='stylesheet', href='css/foundation.css')
+    link(rel='stylesheet', href='css/app.css')
+  body
+    
+    //- TYPOGRAPHY
+    div(class="row")
+      
+      //- HEADING
+      h1 Heading
+        small Secondary Text
+      h2(class="subheader") Heading
+          small Secondary Text
+          
+      //- PARAGRAPHS
+      p(class="lead") 
+        strong Lorem ipsum dolor amet 
+        em authentic messenger bag meggings, bitters before they sold out photo booth hammock tofu 
+        a(href="#") polaroid iceland taiyaki.
+        
+      p 
+        strong Lorem ipsum dolor amet 
+        em authentic messenger bag meggings, bitters before they sold out photo booth hammock tofu 
+        a(href="#") polaroid iceland taiyaki.
+        
+      p Server Uptime
+      div(class="stat") 230
+      
+      hr
+      
+      //- ALIGNMENT CLASSES
+      
+      p(class="text-left") left aligned text
+      p(class="text-center") center aligned text
+      p(class="text-right") right aligned text 
+      p(class="text-justify") justified text 
+      
+      //-FLOAT CLASSES
+      div(class="callout clearfix")
+        a(class="button float-left") Left 
+        a(class="button float-right") Right 
+        
+      hr
+        
+      //-code
+      code &lt; div class="myClass" &gt; Hello World &lt; /div$gt; 
+      p Press 
+        kbd CMD+R
+        p (or
+        kbd CTRL+R
+        p on Windows )
+  
+    script(src='js/vendor/jquery.js')
+    script(src='js/vendor/what-input.js')
+    script(src='js/vendor/foundation.js')
+    script(src='js/app.js')
