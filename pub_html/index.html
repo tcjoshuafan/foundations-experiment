@@ -5,10 +5,37 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foundation Sandbox</title>
+    <link rel="stylesheet" href="css/icons/foundation-icons.css">
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li class="menu-text">Site Title</li>
+          <li><a href="#">One </a>
+            <ul class="menu vertical">
+              <li><a href="#">One </a></li>
+              <li><a href="#">Two </a></li>
+              <li><a href="#">Three </a></li>
+            </ul>
+          </li>
+          <li><a href="#">Two </a></li>
+          <li><a href="#">Three </a></li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li>
+            <input type="search" placeholder="Search">
+          </li>
+          <li> 
+            <button class="button" type="button">Search </button>
+          </li>
+        </ul>
+      </div>
+    </div>
     <div class="row"> 
       <h1>Heading<small>Secondary Text</small></h1>
       <h2 class="subheader">Heading<small>Secondary Text</small></h2>
@@ -111,7 +138,53 @@
         </fieldset>
         <label class="button" for="fileUpload">Upload File </label>
         <input class="show-for-sr" type="file" id="fileUpload">
+        <label>password</label>
+        <input type="password">
+        <p class="help-text">Your password must be 8 characters or more</p>
+        <div class="input-group"><span class="input-group-label">@</span>
+          <input class="input-group-field" type="email">
+          <div class="input-group-button">
+            <input class="button" type="submit" value="submit">
+          </div>
+        </div>
+        <div class="switch">
+          <input class="switch-input" id="mySwitch" type="checkbox" name="exampleSwitch">
+          <label class="switch-paddle" for="mySwitch"><span class="show-for-sr"></span></label>
+        </div>
+        <div class="slider" data-slider data-initial-start="0" data-end="20"><span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span><span class="slider-fill" data-slider-fill></span>
+          <input type="hidden">
+        </div>
       </form>
+      <div class="row">
+        <ul class="menu">
+          <li class="menu-text">Site Title </li>
+          <li><a href="#">Link 1</a></li>
+          <li class="active"><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+        </ul>
+        <ul class="menu vertical">
+          <li class="menu-text">Site Title </li>
+          <li><a href="#">Link 1</a></li>
+          <li class="active"><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+        </ul>
+        <ul class="menu icon-top">
+          <li><a href="#"><i class="fi-list"></i><span>One</span></a></li>
+          <li><a href="#"><i class="fi-list"></i><span>Two</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="columns large-8 medium-6 small-8">
+        <h3>Main Column </h3>
+        <p>Lorem ipsum dolor amet iPhone keffiyeh enamel pin, XOXO migas tumeric hammock affogato ugh ramps raw denim thundercats YOLO viral. Prism migas celiac sriracha.</p>
+        <div class="columns large-4 medium-6 small-4">
+          <h3>Sidebar</h3>
+          <p>Lorem ipsum dolor amet iPhone keffiyeh enamel pin, XOXO migas tumeric hammock affogato ugh ramps raw denim thundercats YOLO viral. Prism migas celiac sriracha.</p>
+        </div>
+      </div>
     </div>
   </body>
   <script src="js/vendor/jquery.js"></script>
